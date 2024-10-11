@@ -1,7 +1,11 @@
 class ColeccionNumeros:
     def maximo(self,nums):
-        orden=sorted(nums)
-        return orden[4]
+        compa=0
+        for x in nums:
+            if(x > compa):
+                maximomeridio=x
+            compa = x
+        return maximomeridio
 
 La_lista=[]
 for i in range(5):
