@@ -3,6 +3,8 @@ import random
 letrause=[]
 pala=[]
 comparador=[]
+holador=[]
+helou=""
 
 cont=0
 
@@ -50,13 +52,20 @@ while cont <= 5:
         else:
             print("_",end=" ")
 
-    seleccion=input("Deseas ingresar la palabra que crees que sea?: S/N")
+    seleccion=input("Deseas ingresar la frase que crees que sea?: S/N")
     seleccion=seleccion.upper()
     if seleccion == "S":
-        palabrotaa=input("Ingresa el animal que crees que sea:")
-        palabrotas=input("Ingresa el adjetivo crees que sea:")
+        hola=input("Ingresa la frase que crees que sea")
 
-        palabrota=palabrotaa+palabrotas
+        for elements in hola:
+            if elements !=  " ":
+                holador.append(elements)
+
+        for letras in holador:
+            helou=helou+letras
+        
+
+        palabrota=helou
         for l in palabrota:
             comparador.append(l)
         
