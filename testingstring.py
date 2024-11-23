@@ -10,6 +10,3 @@ for elements in hola:
 
 for letras in holador:
     helou=helou+letras
-
-print(holador)
-print(helou)
